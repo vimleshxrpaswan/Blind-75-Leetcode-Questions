@@ -29,6 +29,7 @@ public class GreatestCommonDivisorOfString {
     }
 
     private static boolean isDivisible(String s, String t) {
+
         int lenS = s.length();
         int lenT = t.length();
         return lenS % lenT == 0 && s.equals(t.repeat(lenS / lenT));
